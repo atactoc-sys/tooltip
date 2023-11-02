@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Roboto:wght@100;300;400;700;900&family=Ubuntu+Mono:wght@400;700&display=swap');
+.tooltip-container {
+
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    position: relative;
+    background-color: black;
+    visibility: 90%;
+}
+
+h2 {
+    color: white;
+    font-size: 40px;
+    letter-spacing: 5px;
+    font-family: DM Mono;
+
+}
+button {
+    margin: 25px;
+    padding: 10px;
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    font-size: 30px;
+    letter-spacing: 6px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid orange;
+    transform: scale(1.1);
+}
+
+.tooltip {
+    display: none;
+    position: absolute;
+    padding: 8px;
+    background-color: orange;
+    border-radius: 0 10px 0 10px;
+    color: red;
+    letter-spacing: 3px;
+    font-family: 'Times New Roman', Times, serif;
+    z-index: 1;
+}
+
+.tooltip.tooltip-top {
+    top: 320px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.tooltip.tooltip-bottom {
+    top: 450px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.tooltip.tooltip-right {
+    top: 385px;
+    left: 65%;
+}
+
+.tooltip.tooltip-left {
+    top: 385px;
+    left: 27%;
+}
+
+.tooltip-container:hover .tooltip {
+    display: block;
+}
+
+.position-buttons {
+    margin-top: 20px;
+    padding: 60px;
+}
+
+.position-buttons button {
+    margin: 25px;
+    padding: 10px;
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    border-bottom: 2px solid #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+    width: 100px;
+    font-size: 20px;
+    letter-spacing: 5px
+}
+
+.position-buttons button:hover {
+    background-color: transparent;
+    /* Change background color on hover */
+    color: orange;
+    /* Change text color on hover */
+    border-color: red;
+    /* Change the border color on hover */
+}
